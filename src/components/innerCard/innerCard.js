@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import "./innerCard.css";
-import store from "../../store";
+// import store from "../../store";
 
 
 class InnerCard extends Component {
 
 	render() {
-		console.log(this.props);
 		return (
-			<div className="card-inner">
-
-			</div>
+			<span className="card-inner">
+				{this.props.data}
+			</span>
 		)
 	}
 }

@@ -6,7 +6,7 @@ import DataContainer from "./DataContainer";
 const history = createHistory();
 
 class AppContainer extends Component {
-	
+
 	render() {
 		return(
 			<Router history={history}>

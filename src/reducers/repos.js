@@ -6,16 +6,17 @@ export default function reducer(
 	action
 ) {
 	switch (action.type) {
-		case "FETCH_USER_PROFILE_FULLFILLED":
+		case "FETCH_USER_REPOS_FULLFILLED":
 			return {
 				...state,
 				current: {
 					name: action.payload.name,
-					bio: action.payload.bio,
-					location: action.payload.location
+					language: action.payload.language,
+					html_url: action.payload.html_url,
+					description: action.payload.description,
 				}
 			}
-		case "FETCH_USER_PROFILE_FAILED":
+		case "FETCH_USER_REPOS_FAILED":
 			return {
 				...state,
 				error: action.payload

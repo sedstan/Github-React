@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import * as dataAction from "../actions/profile";
-import Card from "../components/card/card";
+import ProfileCard from "../components/profileCard/profileCard";
 
 class DataContainer extends Component {
 
@@ -9,24 +9,16 @@ class DataContainer extends Component {
 		this.props.dispatch(dataAction.getProfile());
 	}
 
-	render(){
-		// console.log(this.props.profile.current)
+	render() {
+		console.log(this.props.profile);
 		return (
-			<section>
-				<div>
-					<h1>Profile Data</h1>
-					<Card data={this.props.profile}/>
-				</div>
-				<div>
-					<h1>Repo Data</h1>
-				</div>
-			</section>
+				<ProfileCard data={this.props.profile}/>
 		)
 	}
 }
 
 function mapStateToProps(state) {
-return {profile : state.profile};
+	return {profile: state.profile};
 }
 
 export default connect(mapStateToProps)(DataContainer);
