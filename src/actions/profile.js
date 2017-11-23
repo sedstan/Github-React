@@ -3,7 +3,7 @@ import axios from "axios";
 export function getProfile() {
 	return function(dispatch) {
 		axios.get(
-			"https://api.github.com/users/sedstan"
+			"https://api.github.com/graphql"
 		)
 		.then(response => {
 			// console.log(response.data);
