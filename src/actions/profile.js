@@ -2,11 +2,37 @@ import axios from "axios";
 
 export function getProfile() {
 	return function(dispatch) {
-		axios.get(
-			"https://api.github.com/graphql"
-		)
+		axios({
+			url: 'https://api.github.com/graphql/',
+			method: 'post',
+			data: {
+				query: `
+					query LogIn  { 
+						 viewer {
+							login
+							isViewer
+							avatarUrl
+							name
+							login
+							bio
+							company
+							email
+							repositories(first: 20) {
+								edges {
+									node {
+										name
+										description
+										url
+									}
+								}
+							}
+  					}
+					}
+			`
+			}
+		})
 		.then(response => {
-			// console.log(response.data);
+			console.log(response.data);
 			dispatch({
 				type: "FETCH_USER_PROFILE_FULLFILLED",
 				payload: response.data
