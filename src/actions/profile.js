@@ -1,12 +1,43 @@
 import axios from "axios";
+import token from "../config/config";
 
 export function getProfile() {
 	return function(dispatch) {
-		axios.get(
-			"https://api.github.com/users/sedstan"
-		)
+		axios({
+      method: 'post',
+      url: 'https://api.github.com/graphql',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + token
+      },
+			data: {
+				query: `
+					query LogIn  { 
+						 viewer {
+							login
+							isViewer
+							avatarUrl
+							name
+							login
+							bio
+							company
+							email
+							repositories(first: 20) {
+								edges {
+									node {
+										name
+										description
+										url
+									}
+								}
+							}
+  					}
+					}
+			`
+			}
+		})
 		.then(response => {
-			// console.log(response.data);
+			console.log(response.data);
 			dispatch({
 				type: "FETCH_USER_PROFILE_FULLFILLED",
 				payload: response.data

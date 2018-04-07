@@ -1,0 +1,6 @@
+#App
+node_modules
+
+#Config
+./src/config/config.js
+
