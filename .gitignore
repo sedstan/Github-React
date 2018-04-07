@@ -2,5 +2,5 @@
 node_modules
 
 #Config
-./src/config/*
+./src/config/config.js
 
