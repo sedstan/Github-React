@@ -2,5 +2,5 @@
 .DS_Store
 
 #app
-node_modules
-config
+/node_modules
+/src/config/config.js
