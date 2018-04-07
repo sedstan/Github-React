@@ -10,7 +10,8 @@ class DataContainer extends Component {
 	}
 
 	render() {
-		console.log(this.props.profile);
+    console.log(this.props);
+    
 		return (
 				<ProfileCard data={this.props.profile}/>
 		)
