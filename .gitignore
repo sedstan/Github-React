@@ -1,3 +1,9 @@
 #Config
 src/config/config.js
 src/config/config.js
+#system
+.DS_Store
+
+#app
+node_modules
+config
