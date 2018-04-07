@@ -1,7 +1,3 @@
-#App
-node_modules
-public
-
 #Config
 src/config/config.js
 
