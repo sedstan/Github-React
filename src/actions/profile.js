@@ -1,5 +1,5 @@
 import axios from "axios";
-import token from "../config/config";
+import token from "../config/config.js";
 
 export function getProfile() {
 	return function(dispatch) {
@@ -7,7 +7,6 @@ export function getProfile() {
       method: 'post',
       url: 'https://api.github.com/graphql',
       headers: {
-        'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + token
       },
 			data: {
