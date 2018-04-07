@@ -1,10 +1,15 @@
 import axios from "axios";
+import token from "../config/config";
 
 export function getProfile() {
 	return function(dispatch) {
 		axios({
-			url: 'https://api.github.com/graphql/',
-			method: 'post',
+      method: 'post',
+      url: 'https://api.github.com/graphql',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + token
+      },
 			data: {
 				query: `
 					query LogIn  { 
