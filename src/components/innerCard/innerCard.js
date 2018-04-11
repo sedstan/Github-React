@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./innerCard.css";
-// import store from "../../store";
+import store from "../../store";
 
 
 class InnerCard extends Component {

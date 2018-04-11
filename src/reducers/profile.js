@@ -1,6 +1,6 @@
 export default function reducer(
 	state = {
-		current: null,
+    current: null,
 		error: null
 	},
 	action
@@ -12,7 +12,7 @@ export default function reducer(
 				current: {
 					name: action.payload.data.viewer.name,
 					bio: action.payload.data.viewer.bio,
-					location: action.payload.data.viewer.location
+          location: action.payload.data.viewer.location
 				}
 			}
 		case "FETCH_USER_PROFILE_FAILED":
@@ -23,6 +23,5 @@ export default function reducer(
 		default: {
 			return state;
 		}
-
 	}
 }

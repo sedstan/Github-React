@@ -1,4 +1,4 @@
-import { applyMiddleware, createStore } from "redux";
+import { applyMiddleware, createStore, compose } from "redux";
 import { createLogger } from "redux-logger";
 import thunk from "redux-thunk";
 import promise from "redux-promise-middleware";
@@ -7,4 +7,4 @@ import "./index.css";
 
 const middleware = applyMiddleware(promise(), thunk, createLogger());
 
-export default createStore(reducer, middleware)
+export default createStore(reducer, middleware, compose, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
