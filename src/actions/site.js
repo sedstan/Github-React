@@ -18,18 +18,10 @@ export function getProfile() {
 							avatarUrl
 							name
 							login
-							bio
+              bio
+              location
 							company
 							email
-							repositories(first: 20) {
-								edges {
-									node {
-										name
-										description
-										url
-									}
-								}
-							}
   					}
 					}
 			`
@@ -46,6 +38,49 @@ export function getProfile() {
 			console.log(error);
 			dispatch({
 				type: "FETCH_USER_PROFILE_FAILED",
+				payload: error
+			});
+		});
+	}
+}
+
+export function getRepos() {
+	return function(dispatch) {
+		axios({
+      method: 'post',
+      url: 'https://api.github.com/graphql',
+      headers: {
+        'Authorization': 'Bearer ' + token
+      },
+			data: {
+				query: `
+					query Repos  { 
+						 viewer {
+								repositories(first: 20) {
+								edges {
+									node {
+										name
+										description
+										url
+									}
+								}
+							}
+  					}
+					}
+			`
+			}
+		})
+		.then(response => {
+			// console.log(response.data);
+			dispatch({
+				type: "FETCH_USER_REPOS_FULLFILLED",
+				payload: response.data
+			});
+		})
+		.catch(error => {
+			console.log(error);
+			dispatch({
+				type: "FETCH_USER_REPOS_FAILED",
 				payload: error
 			});
 		});
