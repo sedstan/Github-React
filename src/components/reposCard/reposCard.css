@@ -1,0 +1,14 @@
+.repos {
+  position: relative;
+  width: 66.6667%;
+  margin: 0 auto;
+}
+.repos-card {
+   position: absolute;
+   padding: 0px 10px;
+   margin: 0px 10px;
+   position: relative;
+   display: block;
+   border: #5E6868 solid 2px;
+   border-radius: 10px;
+}
