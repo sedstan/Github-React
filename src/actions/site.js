@@ -56,7 +56,7 @@ export function getRepos() {
 				query: `
 					query Repos  { 
 						 viewer {
-								repositories(first: 20) {
+								repositories(last: 10) {
 								edges {
 									node {
 										name

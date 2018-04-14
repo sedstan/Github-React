@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "./innerCard.css";
-import store from "../../store";
 
 
 class InnerCard extends Component {
-
 	render() {
 		return (
 			<span className="card-inner">

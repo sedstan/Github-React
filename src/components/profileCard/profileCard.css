@@ -1,19 +1,9 @@
-.profile {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
 .card-profile {
-	border: black solid 2px;
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
-	height: fit-content;
-	padding: 0px 10px;
-	margin: 0px 10px;
-	position: relative;
-	display: block;
-	border-radius: 10px;
-
+  position: absolute;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  position: relative;
+  display: block;
+  border: #5E6868 solid 2px;
+  border-radius: 10px;
 }
