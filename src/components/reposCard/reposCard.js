@@ -7,12 +7,12 @@ class ReposCard extends Component {
       <section className="repos">
         {this.props.data.current && this.props.data.current.repositories.edges.map((item, index) => {
           return (
-            <div className="repos-card" key={index}>
-              <div className="repost-card-inner">
-                <a href={item.node.url}>
-                  <h4>{item.node.name}</h4>
+            <div className="card repos-card" key={index}>
+              <div className="overlay">
+                <div className="repost-card-inner">
+                  <a href={item.node.url}><h4>{item.node.name}</h4></a>
                   <p>{item.node.description}</p>
-                </a>
+                </div>
               </div>
             </div>
           )
