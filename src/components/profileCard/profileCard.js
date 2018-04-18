@@ -11,8 +11,8 @@ class ProfileCard extends Component {
           <div className="card-picture">
             <Image />
           </div>
-          <div className="card-profile">
-            {this.props.data.current && <h3><InnerCard data={this.props.data.current.name } /></h3>}
+          <div className="card card-profile">
+            {this.props.data.current && <h2><InnerCard data={this.props.data.current.name } /></h2>}
             {this.props.data.current && <p><InnerCard data={this.props.data.current.bio} /></p>}
             {this.props.data.current &&<p><InnerCard data={this.props.data.current.location} /></p> }
           </div>
