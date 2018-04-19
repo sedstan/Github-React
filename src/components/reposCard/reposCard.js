@@ -10,8 +10,7 @@ class ReposCard extends Component {
           return (
             <div className="repos-card" key={index}>
               <div className="repos-card--inner">
-                <a href={item.node.url}>
-                  <h4>{item.node.name}</h4>
+                <a href={item.node.url}><h4>{item.node.name}</h4></a>
                   <p>{item.node.description}</p>
                   {item.node.languages.edges.map((lang, i) => {
                     return (
@@ -20,7 +19,6 @@ class ReposCard extends Component {
                       </div>
                     )
                   })}
-                </a>
               </div>
             </div>
           )
