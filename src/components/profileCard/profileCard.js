@@ -10,11 +10,11 @@ class ProfileCard extends Component {
 	render() {
     console.log(this.props.data.current);
 		return (
-        <section className="profile">
-          <div className="card-picture">
+        <section className="card">
+          <div>
             <Image />
           </div>
-          <div className="card card-profile">
+          <div className="card--profile">
             {this.props.data.current && <h2><InnerCard data={this.props.data.current.name } /></h2>}
             {this.props.data.current && <p><InnerCard data={this.props.data.current.bio} /></p>}
             <GoLocation />{this.props.data.current &&<p><InnerCard data={this.props.data.current.location} /></p> }
