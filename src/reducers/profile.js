@@ -12,7 +12,9 @@ export default function reducer(
 				current: {
 					name: action.payload.data.viewer.name,
 					bio: action.payload.data.viewer.bio,
-          location: action.payload.data.viewer.location
+          location: action.payload.data.viewer.location,
+          company: action.payload.data.viewer.company,
+          email: action.payload.data.viewer.email
 				}
 			}
 		case "FETCH_USER_PROFILE_FAILED":
