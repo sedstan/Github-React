@@ -10,7 +10,8 @@ export default function reducer(
 			return {
 				...state,
 				current: {
-					name: action.payload.data.viewer.name,
+          name: action.payload.data.viewer.name,
+          login: action.payload.data.viewer.login,
 					bio: action.payload.data.viewer.bio,
           location: action.payload.data.viewer.location,
           company: action.payload.data.viewer.company,

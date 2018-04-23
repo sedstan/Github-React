@@ -4,29 +4,27 @@ import token from "../config/config.js";
 export function getProfile() {
   return function (dispatch) {
     axios({
-      method: 'post',
-      url: 'https://api.github.com/graphql',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      },
-      data: {
-        query: `
+        method: 'post',
+        url: 'https://api.github.com/graphql',
+        headers: {
+          'Authorization': 'Bearer ' + token
+        },
+        data: {
+          query: `
 					query LogIn  { 
 						 viewer {
-							login
-							isViewer
-							avatarUrl
-							name
-							login
+               avatarUrl
+              name
+              login
               bio
               location
-							company
-							email
+              company
+              email
   					}
 					}
 			`
-      }
-    })
+        }
+      })
       .then(response => {
         console.log(response.data);
         dispatch({
@@ -47,13 +45,13 @@ export function getProfile() {
 export function getRepos() {
   return function (dispatch) {
     axios({
-      method: 'post',
-      url: 'https://api.github.com/graphql',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      },
-      data: {
-        query: `
+        method: 'post',
+        url: 'https://api.github.com/graphql',
+        headers: {
+          'Authorization': 'Bearer ' + token
+        },
+        data: {
+          query: `
 					query Repos  { 
 						 viewer {
 								repositories(last: 10) {
@@ -75,8 +73,8 @@ export function getRepos() {
   					}
 					}
 			`
-      }
-    })
+        }
+      })
       .then(response => {
         // console.log(response.data);
         dispatch({
