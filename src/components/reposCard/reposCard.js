@@ -11,7 +11,7 @@ const ReposCard = props => {
             <div className="card--repos">
               <a href={item.node.url}><h4>{item.node.name}</h4></a>
               <p>{item.node.description}</p>
-              <p>Languages:</p>
+              <h3>Languages:</h3>
               {item.node.languages.edges.map((lang, i) => {
                 return (
                   <div key={i}>

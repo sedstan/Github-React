@@ -19,7 +19,7 @@ const ProfileCard = (props) => {
       </div>
       <div className="card--profile">
         {props.data.current && <h2>{props.data.current.name}</h2>}
-        {props.data.current && <p><GoMention className="card--icons" /> {props.data.current.login}</p>}
+        {props.data.current && <p> {props.data.current.login}</p>}
         {props.data.current && <p>{props.data.current.bio}</p>}
         {props.data.current && <p><GoLocation className="card--icons" />{props.data.current.location}</p>}
         {props.data.current && <p><GoOrganization className="card--icons" />{props.data.current.company}</p>}
