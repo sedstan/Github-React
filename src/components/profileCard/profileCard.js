@@ -4,7 +4,6 @@ import Image from "../image/image";
 import { GoLocation } from 'react-icons/lib/go'
 import { GoOrganization } from 'react-icons/lib/go'
 import { GoMail } from 'react-icons/lib/go'
-import { GoMention } from 'react-icons/lib/go'
 
 
 const ProfileCard = (props) => {

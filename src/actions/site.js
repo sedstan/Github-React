@@ -64,6 +64,7 @@ export function getRepos() {
                       edges {
                         node {
                           name
+                          color
                         }
                       }
                     }
