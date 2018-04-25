@@ -1,5 +1,5 @@
 import React from "react";
-import './reposCard.css';
+import './reposCard.scss';
 
 const ReposCard = props => {
   return (
@@ -15,7 +15,7 @@ const ReposCard = props => {
               {item.node.languages.edges.map((lang, i) => {
                 return (
                   <div key={i}>
-                    <div className="card--repos-color">{lang.node.color}</div>
+                    {/* <div className="card--repos-color">{lang.node.color}</div> */}
                     <p>{lang.node.name}</p>
                   </div>
                 )

@@ -3,6 +3,7 @@
 
 #App
 /src/config/config.js
+/src/**/*.css
 
 # Logs
 logs

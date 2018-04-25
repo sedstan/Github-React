@@ -1,0 +1,28 @@
+@import '_color.scss';
+
+html,
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  padding: 10px;
+  color: $green;
+  background-color:$lightGrey;
+  min-width: 320px;
+  max-width: 1440px;
+}
+
+section {
+  /* margin-bottom: 20px; */
+}
+h2, p {
+  margin: 8px 0;
+}
+
+.card {
+  background-color: $lightBlue;
+  color: $darkGrey;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+   max-width: 300px;
+   margin: auto;
+   text-align: center;
+}

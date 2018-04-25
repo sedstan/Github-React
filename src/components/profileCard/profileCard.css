@@ -1,7 +1,4 @@
-.card--icons {
-  margin-right: 5px;
-}
-
 .card--profile {
-  padding: 5px;
-}
+  padding: 5px; }
+  .card--profile .card--icons {
+    margin-right: 5px; }
