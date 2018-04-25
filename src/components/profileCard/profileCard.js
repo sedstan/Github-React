@@ -1,5 +1,5 @@
 import React from "react";
-import './profileCard.scss';
+import './profileCard.css';
 import Image from "../image/image";
 import { GoLocation } from 'react-icons/lib/go'
 import { GoOrganization } from 'react-icons/lib/go'
@@ -11,11 +11,9 @@ const ProfileCard = (props) => {
 
   return (
     <section className="card">
-      <div className="card--overlay">
         <div>
           <Image />
         </div>
-      </div>
       <div className="card--profile">
         {props.data.current && <h2>{props.data.current.name}</h2>}
         {props.data.current && <p> {props.data.current.login}</p>}
