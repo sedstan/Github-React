@@ -4,6 +4,7 @@ import {getProfile} from "../actions/site";
 import {getRepos} from "../actions/site";
 import ProfileCard from "../components/profileCard/profileCard";
  import ReposCard from "../components/reposCard/reposCard";
+ import Footer from "../components/footer/footer";
 
 class DataContainer extends Component {
 
@@ -17,6 +18,7 @@ class DataContainer extends Component {
       <div>
 				<ProfileCard data={this.props.profile}/>
 				<ReposCard data={this.props.repos}/>
+        <Footer />
       </div>  
 		)
 	}

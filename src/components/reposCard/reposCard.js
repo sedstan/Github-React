@@ -1,6 +1,9 @@
 import React from "react";
 import './reposCard.css';
 
+/**
+ * TODO: feature where a boolean mathces colour to library. 
+ **/
 const ReposCard = props => {
   return (
     <section>

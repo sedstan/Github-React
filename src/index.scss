@@ -10,10 +10,6 @@ body {
   max-width: 1440px;
 }
 
-section {
-  /* margin-bottom: 20px; */
-}
-
 h2,
 p {
   margin: 8px 0;
@@ -24,7 +20,12 @@ p {
   background-color: $lightBlue;
   color: $darkGrey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
   max-width: 300px;
   margin: auto;
   text-align: center;
+   
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
