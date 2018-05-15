@@ -7,8 +7,7 @@ import { GoMail } from 'react-icons/lib/go'
 
 
 const ProfileCard = (props) => {
-  console.log(props.data.current);
-
+  
   return (
     <section className="card">
         <div>

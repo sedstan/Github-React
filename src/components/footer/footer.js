@@ -1,19 +1,18 @@
 import React, { Component } from "react";
-import { Date } from "core-js";
 
 export default class Footer extends Component {
   displayCopyright = () => {
-    // document.getElementsByClassName('footer');
-    // new Date().getFullYear()
+    let today = new Date;
+    let year = today.getFullYear();
     return (
-      <p>Copyright &copy;   </p>
+      <p>{year}</p>
     )
   } 
   render() {
     console.log(this.props);
     return(
       <footer className="footer">
-        {this.displayCopyright()}
+        Copyright &copy; {this.displayCopyright()}
       </footer>
     )
   }
