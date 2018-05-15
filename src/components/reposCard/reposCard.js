@@ -1,11 +1,13 @@
 import React from "react";
-import './reposCard.scss';
+import './reposCard.css';
 
+/**
+ * TODO: feature where a boolean mathces colour to library. 
+ **/
 const ReposCard = props => {
   return (
     <section>
       {props.data.current && props.data.current.repositories.edges.map((item, index) => {
-        console.log(props.data.current.repositories.edges)
         return (
           <div className="card" key={index}>
             <div className="card--repos">
