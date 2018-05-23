@@ -5,7 +5,7 @@
 /src/config/config.js
 src/**/*.css
 /.netlify
-/build/*
+/build
 
 # Logs
 logs
