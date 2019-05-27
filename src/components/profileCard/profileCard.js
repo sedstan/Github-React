@@ -1,13 +1,13 @@
 import React from "react";
 import './profileCard.css';
 import Image from "../image/image";
-import { GoLocation } from 'react-icons/lib/go'
-import { GoOrganization } from 'react-icons/lib/go'
-import { GoMail } from 'react-icons/lib/go'
+import { GoLocation } from 'react-icons/go'
+import { GoOrganization } from 'react-icons/go'
+import { GoMail } from 'react-icons/go'
 
 
 const ProfileCard = (props) => {
-  
+
   return (
     <section className="card">
         <div>
