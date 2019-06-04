@@ -18,8 +18,8 @@ const ProfileCard = (props) => {
         {props.data.current && <p> {props.data.current.login}</p>}
         {props.data.current && <p>{props.data.current.bio}</p>}
         {props.data.current && <p><GoLocation className="card--icons" />{props.data.current.location}</p>}
-        {props.data.current && <p><GoOrganization className="card--icons" />{props.data.current.company}</p>}
-        {props.data.current && <p><GoMail className="card--icons" />{props.data.current.email}</p>}
+          {props.data.current && <p><GoOrganization className="card--icons" /><a href='https://github.com/wearewhy'>{props.data.current.company}</a></p>}
+          {props.data.current && <p><GoMail className="card--icons" /><a href='mailto:sed@sedkystanleysaid.com'>{props.data.current.email}</a></p>}
       </div>
     </section>
   )

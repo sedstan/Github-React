@@ -11,18 +11,18 @@ export function getProfile() {
         },
         data: {
           query: `
-					query LogIn  { 
-						 viewer {
-               avatarUrl
-              name
-              login
-              bio
-              location
-              company
-              email
-  					}
-					}
-			`
+            query LogIn  { 
+			    viewer {
+                    avatarUrl
+                    name
+                    login
+                    bio
+                    location
+                    company
+                    email
+  				}
+			}
+		  `
         }
       })
       .then(response => {
@@ -50,28 +50,28 @@ export function getRepos() {
         },
         data: {
           query: `
-					query Repos  { 
-						 viewer {
-								repositories(last: 10) {
-								edges {
-									node {
-										name
-										description
-                    url
-                    languages(last: 10) {
-                      edges {
-                        node {
-                          name
-                          color
-                        }
-                      }
-                    }
-									}
-								}
+            query Repos  { 
+			    viewer {
+				    repositories(last: 10) {
+					    edges {
+						    node {
+							    name
+								description
+                                url
+                                languages(last: 10) {
+                                    edges {
+                                        node {
+                                            name
+                                            color
+                                        }
+                                    }
+                                }
 							}
-  					}
+						}
 					}
-			`
+  				}
+			}
+		  `
         }
       })
       .then(response => {
