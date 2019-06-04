@@ -1,12 +1,10 @@
-#System
-.DS_Store
 
 #App
 /src/config/config.js
 src/**/*.css
 /.netlify
 /build
-
+/.idea
 # Logs
 logs
 *.log
