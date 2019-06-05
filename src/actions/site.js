@@ -1,5 +1,5 @@
 import axios from "axios";
-import token from "../config/config.js";
+require('dotenv').config();
 
 export function getProfile() {
   return function (dispatch) {
@@ -7,7 +7,7 @@ export function getProfile() {
         method: 'post',
         url: 'https://api.github.com/graphql',
         headers: {
-          'Authorization': 'Bearer ' + token
+          Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`
         },
         data: {
           query: `
@@ -46,7 +46,7 @@ export function getRepos() {
         method: 'post',
         url: 'https://api.github.com/graphql',
         headers: {
-          'Authorization': 'Bearer ' + token
+          Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`
         },
         data: {
           query: `
