@@ -1,5 +1,5 @@
 import React from "react";
-import './profileCard.css';
+import './profileCard.scss';
 import Image from "../image/image";
 import { GoLocation } from 'react-icons/go'
 import { GoOrganization } from 'react-icons/go'

@@ -1,5 +1,5 @@
 import React from "react";
-import './reposCard.css';
+import './reposCard.scss';
 
 /**
  * TODO: feature where a boolean matches colour to library.
@@ -29,6 +29,6 @@ const ReposCard = props => {
       })}
     </section>
   )
-}
+};
 
 export default ReposCard
