@@ -1,5 +1,6 @@
 # Github-React
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0a992bce31c14e3c873e5545ef4fdfd6)](https://app.codacy.com/app/sedstan/Github-React?utm_source=github.com&utm_medium=referral&utm_content=sedstan/Github-React&utm_campaign=Badge_Grade_Dashboard)
 Build status: [![Build Status](https://travis-ci.org/sedstan/Github-React.svg?branch=master)](https://travis-ci.org/sedstan/Github-React)
 
 ## Table of Contents
