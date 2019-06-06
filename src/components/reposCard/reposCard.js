@@ -2,27 +2,28 @@ import React from "react";
 import './reposCard.css';
 
 /**
- * TODO: feature where a boolean matches colour to library. 
+ * TODO: feature where a boolean matches colour to library.
  **/
 const ReposCard = props => {
   return (
     <section className="layout">
-      {props.data.current && props.data.current.repositories.edges.map((item, index) => {
+      {props.data.current && props.data.current.repositories.edges.map((repo, index) => {
         return (
           <div className="card" key={index}>
-            <div className="card--repos">
-              <a href={item.node.url}><h4>{item.node.name}</h4></a>
-              <p>{item.node.description}</p>
-              <h3>Languages:</h3>
-              {item.node.languages.edges.map((lang, i) => {
-                return (
-                  <div key={i}>
-                    {/* <div className="card--repos-color">{lang.node.color}</div> */}
-                    <p>{lang.node.name}</p>
-                  </div>
-                )
-              })}
-            </div>
+            <a href={repo.node.url}>
+              <div className="card--repos">
+                <h4>{repo.node.name}</h4>
+                <p>{repo.node.description}</p>
+                <h3>Languages:</h3>
+                {repo.node.languages.edges.map((lang, i) => {
+                  return (
+                    <div key={i}>
+                      <p style={{color: `${lang.node.color}`}}>{lang.node.name}</p>
+                    </div>
+                  )
+                })}
+              </div>
+            </a>
           </div>
         )
       })}

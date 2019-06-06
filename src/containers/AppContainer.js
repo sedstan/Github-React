@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Router, Switch, Route} from "react-router-dom";
-import createHistory from "history/createBrowserHistory";
+import {createBrowserHistory} from "history";
 import DataContainer from "./DataContainer";
 
-const history = createHistory();
+const history = createBrowserHistory();
 
 class AppContainer extends Component {
 
