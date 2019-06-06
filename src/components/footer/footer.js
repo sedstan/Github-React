@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './footer.css';
+import './footer.scss';
 
 export default class Footer extends Component {
   displayCopyright = () => {
@@ -8,7 +8,7 @@ export default class Footer extends Component {
     return (
       <p>Copyright &copy; {year}</p>
     )
-  } 
+  };
   render() {
     return(
       <footer className="footer">
