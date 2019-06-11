@@ -7,17 +7,7 @@
 
 ## Table of Contents
 
-<!-- TOC -->
-
-- [Github-React](#github-react)
-    - [Table of Contents](#table-of-contents)
-    - [Description](#description)
-    - [Technologies](#technologies)
-    - [Instalation and Usage](#instalation-and-usage)
-        - [Installation](#installation)
-        - [Usage](#usage)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [Github-React](#github-react)auto  - [Table of Contents](#table-of-contents)auto  - [Description](#description)auto  - [Technologies](#technologies)auto  - [Instalation and Usage](#instalation-and-usage)auto    - [Installation](#installation)auto    - [Usage](#usage)autoauto<!-- /TOC -->
 
 ## Description
 
@@ -47,9 +37,8 @@ Github-React sources data using the [Github API v4](https://developer.github.com
 
 1. Once your project is set up you will need to create a `config` folder and file inside your `src` folder.
 <pre>
-    github-react/
-    |-- src/
-    |    |-- config/
-            |-- config.js
+	github-react/
+	|-- src/
+	|    |-- config/
+			|-- config.js
 </pre>
-
