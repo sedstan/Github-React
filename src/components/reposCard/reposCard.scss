@@ -6,17 +6,17 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		align-items: center;
-		margin: 10px 0 10px 0;
+		margin: 0.625em 0 0.625em 0;
 	.card--repos {
-		padding: 5px;
-		margin: 20px 0;
-		width: 300px;
-		height: 300px;
+		padding: 0.3125em;
+		margin: 1.25em 0;
+		width: 18.75em;
+		height: 18.75em;
 		max-width: 100%;
 	}
 }
 
-@media all and (min-width: 768px) and (max-width: 1280px) {
+@media all and (min-width: 37.5em) and (max-width: 80) {
 	.layout {
 		align-items: stretch;
 	}
