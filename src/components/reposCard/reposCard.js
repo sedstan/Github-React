@@ -11,8 +11,9 @@ const ReposCard = props => {
 						<a href={repo.node.url}>
 							<div className="card--repos">
 								<h4>{repo.node.name}</h4>
-								<p>{repo.node.description}</p>
+								<p className="card--description">{repo.node.description}</p>
 								<h3>Languages:</h3>
+								<div className="card--languages">
 								{repo.node.languages.edges.map((lang, i) => {
 									return (
 										<div key={i}>
@@ -20,6 +21,7 @@ const ReposCard = props => {
 										</div>
 									)
 								})}
+								</div>
 							</div>
 						</a>
 					</div>
@@ -30,3 +32,5 @@ const ReposCard = props => {
 };
 
 export default ReposCard
+
+//TODO: Query for Github stars.
