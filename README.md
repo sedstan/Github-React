@@ -5,10 +5,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3506d8e8-90d1-48e5-b083-76cbad8694aa/deploy-status)](https://app.netlify.com/sites/dreamy-poitras-890e5f/deploys)
 
 
-## Table of Contents
-
-<!-- TOC -->autoauto- [Github-React](#github-react)auto  - [Table of Contents](#table-of-contents)auto  - [Description](#description)auto  - [Technologies](#technologies)auto  - [Instalation and Usage](#instalation-and-usage)auto    - [Installation](#installation)auto    - [Usage](#usage)autoauto<!-- /TOC -->
-
 ## Description
 
 This app utilises the [Facebook](https://www.facebook.com/) [Create React App](https://github.com/facebook/create-react-app) app generator.
@@ -17,13 +13,13 @@ Github-React sources data using the [Github API v4](https://developer.github.com
 
 ## Technologies 
 
-- React
-- Redux
+- [React](https://reactjs.org)
+- [Redux](https://redux.js.org)
 - [Sass](https://sass-lang.com/)
 - [Axios](https://github.com/axios/axios)
 - [React Icons](https://gorangajic.github.io/react-icons/fa.html)
 
-## Instalation and Usage
+## Installation and Usage
 
 ### Installation
 
