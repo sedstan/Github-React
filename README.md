@@ -32,6 +32,7 @@ Github-React sources data using the [Github API v4](https://developer.github.com
 ### Usage
 
 1. Once your project is set up you will need to create a `config` folder and file inside your `src` folder.
+
 <pre>
 	github-react/
 	|-- src/
