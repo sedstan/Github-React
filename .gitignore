@@ -7,7 +7,7 @@
 src/**/*.css
 /.netlify
 /build
-.vscode
+/.vscode
 
 # Logs
 logs
