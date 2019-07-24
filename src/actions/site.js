@@ -56,12 +56,14 @@ export function getRepos() {
               repositories(last: 10) {
                 edges {
                   node {
+                    id
                     name
                     description
                     url
                     languages(last: 10) {
                       edges {
                         node {
+                          id
                           name
                           color
                         }
