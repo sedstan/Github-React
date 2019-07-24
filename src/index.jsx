@@ -5,7 +5,7 @@ import AppContainer from './containers/AppContainer';
 import store from './store';
 import './index.scss';
 import 'normalize.css';
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -13,4 +13,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root'),
 );
-registerServiceWorker();
+serviceWorker.register();
