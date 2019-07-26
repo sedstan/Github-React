@@ -50,3 +50,5 @@ ProfileCard.propTypes = {
 };
 
 export default ProfileCard;
+
+// TODO: Tap target fix

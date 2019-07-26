@@ -14,3 +14,5 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 serviceWorker.register();
+
+// TODO: PWA optimization

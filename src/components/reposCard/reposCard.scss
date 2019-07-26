@@ -16,4 +16,13 @@
     height: 18.75em;
     max-width: 100%;
   }
+  .card__languages {
+    padding: inherit;
+    margin: inherit;
+  }
+  .card__languages {
+    &.card__languages--white {
+      background-color: #ffffff;
+    }
+  }
 }

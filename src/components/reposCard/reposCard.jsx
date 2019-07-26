@@ -11,7 +11,7 @@ const ReposCard = ({ data }) => (
             <h4>{repo.node.name}</h4>
             <p className="card__description">{repo.node.description}</p>
             <h3>Languages:</h3>
-            <div className="card__languages">
+            <div className="card__languages card__languages--white">
               {repo.node.languages.edges.map(lang => (
                 <div key={lang.node.id}>
                   <p style={{ color: `${lang.node.color}` }}>{lang.node.name}</p>
