@@ -9,6 +9,7 @@ const Image = () => (
     className="image"
     height={300}
     width={300}
+    aria-label="Github profile image."
   />
 );
 
