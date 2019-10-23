@@ -17,11 +17,11 @@ class DataContainer extends Component {
   render() {
     const { repos, profile } = this.props;
     return (
-      <div>
+      <main role="main">
         <ProfileCard data={profile} />
         <ReposCard data={repos} />
         <Footer />
-      </div>
+      </main>
     );
   }
 }

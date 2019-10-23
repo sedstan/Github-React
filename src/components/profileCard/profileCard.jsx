@@ -28,9 +28,7 @@ const ProfileCard = ({ data }) => (
       {data.current && (
         <p>
           <GoOrganization className="card__icons" />
-          <a href="https://github.com/wearewhy">
             {data.current.company}
-          </a>
         </p>
       )}
       {data.current && (
@@ -50,5 +48,3 @@ ProfileCard.propTypes = {
 };
 
 export default ProfileCard;
-
-// TODO: Tap target fix
