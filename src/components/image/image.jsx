@@ -4,12 +4,12 @@ import './image.scss';
 
 const Image = () => (
   <img
+    aria-label="Github profile image."
     src="https://avatars0.githubusercontent.com/u/13971876?v=4"
     alt="me"
     className="image"
     height={300}
     width={300}
-    aria-label="Github profile image."
   />
 );
 

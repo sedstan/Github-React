@@ -17,7 +17,7 @@ class DataContainer extends Component {
   render() {
     const { repos, profile } = this.props;
     return (
-      <main role="main">
+      <main aria-label="The user's profile, repositories, and footer of the site.">
         <ProfileCard data={profile} />
         <ReposCard data={repos} />
         <Footer />

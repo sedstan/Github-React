@@ -14,6 +14,6 @@ export default class Footer extends Component {
   };
 
   render() {
-    return <footer className="footer" aria-roledescription="contentinfo">{this.displayCopyright()}</footer>;
+    return <footer aria-label="Footer" className="footer">{this.displayCopyright()}</footer>;
   }
 }

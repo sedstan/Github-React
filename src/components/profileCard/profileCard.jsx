@@ -6,7 +6,7 @@ import Image from '../image/image';
 
 
 const ProfileCard = ({ data }) => (
-  <section className="card">
+  <section role="contentinfo" aria-label="Information about the user's Github profile" className="card">
     <div>
       <Image />
     </div>
