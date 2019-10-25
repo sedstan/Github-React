@@ -69,6 +69,11 @@ export function getRepos() {
                         }
                       }
                     }
+                    primaryLanguage {
+                      id
+                      name
+                      color
+                    }
                   }
                 }
               }
