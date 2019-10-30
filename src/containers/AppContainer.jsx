@@ -3,6 +3,7 @@ import { Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import DataContainer from './DataContainer';
 
+
 const history = createBrowserHistory();
 
 const AppContainer = () => (

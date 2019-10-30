@@ -17,11 +17,13 @@ class DataContainer extends Component {
   render() {
     const { repos, profile } = this.props;
     return (
-      <main aria-label="The user's profile, repositories, and footer of the site.">
-        <ProfileCard data={profile} />
-        <ReposCard data={repos} />
+      <div>
+        <main aria-label="The user's profile, repositories of the site.">
+          <ProfileCard data={profile} />
+          <ReposCard data={repos} />
+        </main>
         <Footer />
-      </main>
+      </div>
     );
   }
 }
