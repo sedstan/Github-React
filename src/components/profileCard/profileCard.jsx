@@ -7,10 +7,10 @@ import Image from '../image/image';
 
 const ProfileCard = ({ data }) => (
   <section role="contentinfo" aria-label="Information about the user's Github profile" className="card">
-    <div>
+    <figure>
       <Image />
-    </div>
-    <div className="card__profile">
+    </figure>
+    <article className="card__profile">
       {data.current && <h2>{data.current.name}</h2>}
       {data.current && (
         <p>
@@ -39,7 +39,7 @@ const ProfileCard = ({ data }) => (
           </a>
         </p>
       )}
-    </div>
+    </article>
   </section>
 );
 
