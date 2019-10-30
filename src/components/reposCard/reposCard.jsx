@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './reposCard.scss';
 
 const ReposCard = ({ data }) => (
-  <section role="contentinfo" aria-label="A card containing information about the Github repository" className="layout">
+  <section role="contentinfo" aria-label="A card containing information about the Github repository" className="reposCardGrid">
     {data.current && data.current.repositories.edges.map(repo => (
       <article className="card" key={repo.node.id}>
         <a href={repo.node.url}>
