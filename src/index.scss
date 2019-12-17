@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   font-size: 1em;
   padding: 0.625em;
-  color: $green;
+  color: $neonGreen;
   background-color: $white;
   min-width: 18.75em;
   max-width: 100em;
@@ -23,13 +23,13 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: $green;
+  color: $lightNeonGreen;
 }
 
 .card {
   position: relative;
-  background-color: $gray;
-  color: $darkBlue;
+  background-color: $black;
+  color: $neonGreen;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.5);
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
@@ -40,12 +40,13 @@ a:hover {
 }
 .card:hover {
   box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.5);
-  background-color: $offWhite;
+  background-color: $gold;
+  color: $pink;
   & .card__primaryLanguage {
     display: block;
     z-index: 1;
   }
-  &  .card__languages {
+  & .card__languages {
     display: none;
   }
 }
