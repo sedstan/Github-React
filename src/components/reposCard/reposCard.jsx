@@ -12,17 +12,17 @@ const ReposCard = ({ data }) => (
             <p className="card__description">{repo.node.description}</p>
             <section className="card__languages">
               <h3>Languages:</h3>
-              {repo.node.languages.edges.map(lang => (
+              {repo.node.languages.edges.map((lang) => (
                 <div key={lang.node.id}>
                   <p style={{ color: `${lang.node.color}` }}>{lang.node.name}</p>
                 </div>
               ))}
             </section>
             <section className="card__primaryLanguage">
-              <div id={repo.node.primaryLanguage.id}>
+              <div id={repo.node.primaryLanguage && repo.node.primaryLanguage.id}>
                 <h3>Primary Language: </h3>
-                <p style={{ color: `${repo.node.primaryLanguage.color}` }}>
-                  {repo.node.primaryLanguage.name}
+                <p style={{ color: `${repo.node.primaryLanguage && repo.node.primaryLanguage.color}` }}>
+                  {repo.node.primaryLanguage && repo.node.primaryLanguage.name}
                 </p>
               </div>
             </section>
